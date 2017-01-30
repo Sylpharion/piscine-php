@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Count me! in Jquery</title>
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+  </head>
+  <body>
+    <script>
+      setInterval(function () {
+        alert("Please, use me...")
+      }, 3000);
+    </script>
+    <input type="text" id="one" name="one" value="">
+    <select id="op" class="" name="">
+      <option id="op" value="+">+</option>
+      <option id="op" value="-">-</option>
+      <option id="op" value="*">*</option>
+      <option id="op" value="/">/</option>
+      <option id="op" value="%">%</option>
+    </select>
+    <input type="text" id="two" name="two" value="">
+    <input type="submit" name="" value="Try me" id="calculator">
+    <script>
+    $(document).ready(function()
+    {
+      $('#calculator').click(function()
+      {
+        var one = $('#one').val();
+        var two = $('#two').val();;
+        var op = $('#op').val();;
+        if ((one.length > 0 && two.length > 0) && ($.isNumeric(one) === true) && ($.isNumeric(two) === true))
+        {
+          if (op == "%" || op == "/")
+          {
+            if (two == "0")
+            {
+              console.log('It’s over 9000!');
+              return alert('It’s over 9000!');
+            }
+          }
+          var res = eval(one+op+two);
+          alert(res);
+          console.log(res);
+        }
+        else
+          return alert('Error :(');
+      });
+    });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pop me! in Jquery</title>
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+  </head>
+  <body>
+    <div style="height:200px; width:200px; background-color:red; border-radius:1000px;
+    margin-left:40%; transformX(-50%); margin-top:10%;" id="balloon">
+    <script>
+    $(document).ready(function()
+    {
+      $('#balloon').click(function(){
+        if ($('#balloon').css("background-color") == "rgb(255, 0, 0)")
+          $('#balloon').css("background-color", "green");
+        else if ($('#balloon').css("background-color") == "rgb(0, 128, 0)")
+          $('#balloon').css("background-color", "blue");
+        else if ($('#balloon').css("background-color") == "rgb(0, 0, 255)")
+          $('#balloon').css("background-color", "red");
+        $('#balloon').css("width", "+=10");
+				$('#balloon').css("height", "+=10");
+        if ($('#balloon').width() > 420)
+				{$('#balloon').css("width", "200");
+					$('#balloon').css("height", "200");}});
+        $('#balloon').mouseout(function(){
+        if ($('#balloon').css("background-color") === "rgb(255, 0, 0)")
+          $('#balloon').css("background-color", "blue");
+        else if ($('#balloon').css("background-color") === "rgb(0, 0, 255)")
+          $('#balloon').css("background-color", "green");
+        else if ($('#balloon').css("background-color") === "rgb(0, 128, 0)")
+          $('#balloon').css("background-color", "red");
+        $('#balloon').css("width", "-=5");
+        $('#balloon').css("height", "-=5");
+        if ($('#balloon').width() < 200){
+          $('#balloon').css("width", "200");
+					$('#balloon').css("height", "200");}});});
+    </script>
+  </body>
+</html>

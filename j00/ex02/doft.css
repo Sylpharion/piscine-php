@@ -1,0 +1,181 @@
+body
+{
+  background-color: #505050;
+  width: 70%;
+  margin: 20px 15% 15% auto;
+}
+
+#upblock
+{
+  background-color: #909090;
+  position: relative;
+  border-radius: 10px;
+  width: 1420px;
+  height: 137px;
+  margin: 20px 235px 20px auto;
+  box-shadow: 10px 10px 10px black;
+}
+
+#leftblock
+{
+  float: left;
+  background-color: #909090;
+  position: relative;
+  border-radius: 10px;
+  width: 140px;
+  height: 425px;
+  margin: auto 30px auto 30px;
+  box-shadow: 10px 10px 10px black;
+}
+
+#rightblock
+{
+  float: left;
+  background-color: #909090;
+  position: relative;
+  border-radius: 10px;
+  width: 140px;
+  height: 425px;
+  margin: auto;
+  box-shadow: 10px 10px 10px black;
+}
+
+#centerblock
+{
+  float: left;
+  background-color: #909090;
+  border-radius: 10px;
+  position: relative;
+  margin-right: 30px;
+  width: 1020px;
+  height: 582px;
+  box-shadow: 10px 10px 10px black;
+}
+
+#greenbox
+{
+    position: fixed;
+}
+
+#dot42
+{
+  margin: 10px;
+  height: 115px;
+}
+
+#reload
+{
+  float: right;
+  margin: 10px 10px auto auto;
+  height: 20px;
+}
+
+#close
+{
+  float: right;
+  margin: 105px -20px auto auto;
+  height: 20px;
+}
+
+#loupe
+{
+  float: right;
+  width: 250px;
+  margin-top: 15px;
+}
+
+.utils
+{
+  margin: 10px 39px auto 33px;
+  width: 70px;
+}
+
+#cluster
+{
+  margin: 10px;
+  width: 1000px;
+}
+
+#book
+{
+
+  margin: 20px auto auto 35px;
+  width: 70px;
+}
+
+#towel
+{
+  margin-left: 40px;
+  width: 60px;
+}
+
+.brick1
+{
+  text-align: center;
+}
+.brick2
+{
+  text-align: center;
+}
+
+#brick
+{
+  margin: -2px;
+}
+
+.patate:hover {border: 10px black}
+
+#textbox
+{
+    margin-top: 250px;
+    position: fixed;
+    background: #8CFD86;
+    height: 170px;
+    width: 520px;
+    margin-left: 290px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    left: 0px;
+    display: block;
+}
+
+#textbox p {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    display: inline;
+    padding: 5px 0px 0px 0px;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+#textbox .text_fantome {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    display: inline;
+    font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-shadow: 7px 4px 4px rgba(255,0,0,0.7);
+}
+
+#textbox i {
+    position: relative;
+    top: 2px;
+    left: 10px;
+    display: inline;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+#textbox strong {
+    position: relative;
+    display: inline;
+    font-size: 32px;
+    font-weight: normal;
+    font-family: Palatino,serif;
+}

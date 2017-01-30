@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Count Me!</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      setInterval(function(){ alert("Please, use me..."); }, 30000);
+    </script>
+    <input type="text" id="one" name="one" value="">
+    <select id="op" class="" name="">
+      <option id="op" value="+">+</option>
+      <option id="op" value="-">-</option>
+      <option id="op" value="*">*</option>
+      <option id="op" value="/">/</option>
+      <option id="op" value="%">%</option>
+    </select>
+    <input type="text" id="two" name="two" value="">
+    <input type="submit" name="" value="Try me" onclick="a()">
+    <script type="text/javascript">
+
+
+      function check(one, two)
+      {
+        if (parseInt(one) === parseFloat(one) || parseInt(two) === parseFloat(two))
+        {
+          if (!isNaN(parseInt(one)) && !isNaN(parseInt(two)))
+          {
+            return true;
+          }
+        }
+        else
+        {
+          return false;
+        }
+      }
+      function a()
+      {
+        var one = document.getElementById('one').value;
+        var two = document.getElementById('two').value;
+        var o = document.getElementById('op').value;
+        if (o == "%" || o == "/")
+        {
+          if (two === "0")
+          {
+            console.log('It’s over 9000!');
+            return alert('It’s over 9000!');
+          }
+        }
+        if (one < 0 || two < 0)
+        {
+          return alert('Error :(');
+        }
+        if (check(one, two) == false)
+        {
+          return alert('Error :(');
+        }
+        var res = eval(one+o+two);
+        alert(res);
+        console.log(res);
+      }
+    </script>
+  </body>
+</html>

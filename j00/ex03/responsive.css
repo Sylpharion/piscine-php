@@ -1,0 +1,37 @@
+table
+{
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  height: 60%;
+  padding: 0;
+}
+td
+{
+  border: 1px solid black;
+}
+h4
+{
+  margin: 0px;
+  font-size: 1.2vmin;
+  text-align: center;
+}
+h6
+{
+  font-size: 1.2vmin;
+  margin: 0px;
+}
+.atom
+{
+  text-align: right;
+}
+#ametal       {background-color: tomato}
+#aearth       {background-color: orange}
+#tmetal       {background-color: yellow}
+#bmetal       {background-color: green}
+#smetal       {background-color: powderblue}
+#nometal      {background-color: skyblue}
+#halogen      {background-color: mediumpurple}
+#noblegas     {background-color: mediumslateblue}
+#lanthanide   {background-color: brown}
+#actinide     {background-color: sandybrown}

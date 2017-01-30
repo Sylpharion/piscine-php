@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pop me!</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var bloon = document.getElementById("balloon");
+      var i = -1;
+      var taille = 200;
+      function pfiou()
+      {
+        var bloon = document.getElementById("balloon");
+        taille -= 5;
+        i -= 1;
+        if (i > 2)
+          i = 2;
+        if (i < 0)
+          i = 0;
+        if (bloon.style.width == "200px")
+        {
+          taille = 200;
+        }
+        bloon.style.width = taille+"px";
+        bloon.style.height = taille+"px";
+        if (i == 0)
+        {
+          i = 3;
+          return bloon.style.background = 'green';
+        }
+        if (i == 1)
+        {
+          return bloon.style.background = 'blue';
+        }
+        if (i == 2)
+        {
+          return bloon.style.background = 'red';
+        }
+      }
+      function wee()
+      {
+        var bloon = document.getElementById("balloon");
+        i += 1;
+        taille += 10;
+        if (i > 2)
+          i = 2;
+        if (i < 0)
+          i = 0;
+        if (bloon.style.width == "420px" || bloon.style.width == "415px")
+          taille = 200;
+        bloon.style.width = taille+"px";
+        bloon.style.height = taille+"px";
+        if (i == 0)
+        {
+          return bloon.style.background = 'green';
+        }
+        if (i == 1)
+        {
+          return bloon.style.background = 'blue';
+        }
+        if (i == 2)
+        {
+          i = -1;
+          return bloon.style.background = 'red';
+        }
+      }
+    </script>
+    <div style="height:200px; width:200px; background-color:red; border-radius:1000px;
+    margin-left:40%; transformX(-50%); margin-top:10%;" id="balloon" onclick="wee();" onmouseout="pfiou()">
+
+    </div>
+  </body>
+</html>

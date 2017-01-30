@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Do it or not do it</title>
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <style media="screen">
+        #ft_list
+        {
+          height: 100px;
+          padding-top: 50px;
+          text-align: center;
+          width: 100px;
+        }
+        div
+        {
+          height: 10px;
+          padding: 10px;
+          text-align: center;
+          margin-left: 40%;
+          transformX(-50%);
+          border-radius: 10px;
+          width: 100px;
+        }
+    </style>
+    <script type="text/javascript" src="todo.js"></script>
+  </head>
+  <body align="center" style="margin-top:20%; transformY(-50%); background-color:#696969;">
+    <button type="button" name="push me" id="new" onclick="add_todo()">New</button>
+    <div id="liste">
+      <div id="ft_list">
+        <script type="text/javascript">liste();</script>
+      </div>
+    </div>
+  </body>
+</html>
