@@ -1,0 +1,54 @@
+.header
+{
+
+}
+
+.imghead
+{
+  width:100%;
+  height:auto;
+  text-align:center;
+  margin-left: 10%;
+  border: 10px black;
+  box-shadow: 10px 10px 10px black;
+}
+header
+{
+  height: 10%;
+  position: relative;
+  text-align:center;
+  width: 80%;
+  margin: 10px 10% auto 10%;
+  border-radius: 10px 10px 10px black;
+}
+
+header ul
+{
+  list-style: none;
+  text-align: center;
+  border-radius: 10px;
+  margin: 0px;
+  padding: auto 5px 20px 0px;
+}
+
+header ul li
+{
+  display: inline-block;
+}
+
+body
+{
+  background-color: #696969;
+}
+
+.login
+{
+    position: relative;
+    margin: 20% auto auto 20%;
+}
+
+#panier table tr td {
+  width: 20%;
+  min-width: 100px;
+  text-align: center;
+}
